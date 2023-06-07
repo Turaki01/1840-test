@@ -1,6 +1,6 @@
 import Axios from "axios";
 import { LoginInterface } from "interfaces/auth";
-import { Params } from "next/dist/server/router";
+
 import { FEEDS_ENDPOINT, LOGIN_ENDPOINT } from "services/api/endpoints";
 import { loginKey } from "utils/constants";
 import storage from "utils/storage";
@@ -25,7 +25,7 @@ export const loginService = (payload: LoginInterface) => {
 
 // feeds
 export const getFeedsService = () => {
-  const params: Params = {
+  const params = {
     page: 1
   };
   return Axios.get(FEEDS_ENDPOINT, {
