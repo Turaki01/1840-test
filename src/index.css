@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.app-layout {
+  display: grid;
+  gap: 20px 50px;
+  grid-template-columns: 20% auto;
+}
+
+.home-layout {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 65% auto;
+}
+
+.activeMenu {
+  background-color: #0472ef;
+  color: #fff;
+}
